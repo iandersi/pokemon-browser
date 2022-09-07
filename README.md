@@ -1,4 +1,4 @@
-##About Pokemon Browser
+# About Pokemon Browser
 
 A simple Pokemon browser single-page application made with React. This app is using the PokeApi. 
 
