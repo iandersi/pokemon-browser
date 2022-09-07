@@ -1,0 +1,13 @@
+.pokemonList {
+    border: darkseagreen solid 3px;
+    margin-bottom: 3px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-img {
+    width: 200px;
+    height: 200px;
+}

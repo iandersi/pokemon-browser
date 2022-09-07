@@ -1,0 +1,1 @@
+export const PokeApiBaseUrl = 'http://localhost'
