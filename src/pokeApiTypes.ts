@@ -16,13 +16,14 @@ export type PokemonStats = {
     base_experience: number,
     height: number,
     weight: number,
-    abilities: PokemonAbilities[];
-}
 
-export type PokemonAbilities = {
-    ability: PokemonAbility[];
+    abilities: PokemonAbility[];
 }
 
 export type PokemonAbility = {
+    ability: PokemonAbilityDetails;
+}
+
+export type PokemonAbilityDetails = {
     name: string
 }

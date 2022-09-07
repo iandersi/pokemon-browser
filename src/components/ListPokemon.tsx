@@ -20,7 +20,7 @@ export default function ListPokemon({pokemons, onStatsClick}: ListPokemonProps) 
                         <div className="card-content">
                             <Card>{pokemon.name.toUpperCase()}</Card>
                             <Card.Img src={`images/${getPokemonNumber(pokemon.url)}.png`}/>
-                            <Button onClick={()=>onStatsClick(pokemon.url)}>Stats</Button>
+                            <Button variant="success" size="sm" onClick={()=>onStatsClick(pokemon.url)}>Stats</Button>
                         </div>
                     </div>
                 )

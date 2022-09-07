@@ -1,4 +1,10 @@
 @import url(ListPokemon.css);
+@import url(PokemonStatsModal.css);
+
+body {
+    background: rgb(255,238,242);
+    background: linear-gradient(93deg, rgba(255,238,242,1) 0%, rgba(244,134,151,1) 40%, rgba(249,155,229,1) 100%);
+}
 
 .container {
     display: flex;
@@ -7,12 +13,26 @@
     justify-content: center;
 }
 
-.prev-and-next-buttons {
+.prev-and-next-buttons-bottom {
     display: flex;
     justify-content: center;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-.prev-and-next-buttons button {
-    margin: 0.1vw;
+.prev-and-next-buttons-bottom button {
+    margin-left: 3px;
+    margin-right: 3px;
 }
+.prev-and-next-buttons-top button {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.prev-and-next-buttons-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+

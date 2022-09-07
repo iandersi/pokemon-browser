@@ -9,9 +9,7 @@ type PokemonStatsModalProps = {
 
 export default function PokemonStatsModal({pokemon, handleClose}: PokemonStatsModalProps) {
 
-    function getPokemonNumber(url: string) {
-        return url.split('/')[6];
-    }
+    let pokemonAbilities = pokemon?.abilities.map(ability => <div className="ability">{ability.ability.name}</div>)
 
     return (
         <>
@@ -19,8 +17,13 @@ export default function PokemonStatsModal({pokemon, handleClose}: PokemonStatsMo
                 <Modal.Header>
                     <Modal.Title>{pokemon?.name.toUpperCase()}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Body</Modal.Body>
-                <Modal.Footer><Button onClick={handleClose}>Close</Button></Modal.Footer>
+                <Modal.Body>
+                    <div>Base experience: {pokemon?.base_experience}</div>
+                    <div>Height: {pokemon?.height}</div>
+                    <div>Weight: {pokemon?.weight}</div>
+                    Abilities:{pokemonAbilities}
+                </Modal.Body>
+                <Modal.Footer><Button variant="success" onClick={handleClose}>Close</Button></Modal.Footer>
             </Modal>
         </>
     );

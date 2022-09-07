@@ -1,6 +1,7 @@
 .pokemonList {
     border: darkseagreen solid 3px;
-    margin-bottom: 3px;
+    background: white;
+    margin: 0.1em;
 }
 .card-content {
     display: flex;
@@ -10,4 +11,13 @@
 .card-img {
     width: 200px;
     height: 200px;
+}
+
+.pokemonList button {
+    margin-bottom: 5px;
+}
+
+.pokemonList .card {
+    margin-top: 5px;
+    border: none;
 }

@@ -60,7 +60,7 @@ function App() {
 
     return (
         <>
-            <div className="prev-and-next-buttons">
+            <div className="prev-and-next-buttons-top">
                 <Button variant="success" onClick={() => getPokemonListData(previousUrl)}>Previous</Button>
                 <Button variant="success" onClick={() => getPokemonListData(nextUrl)}>Next</Button>
             </div>
@@ -68,7 +68,7 @@ function App() {
                 {showLoadingSpinner && <LoadingSpinner/>}
                 {!showLoadingSpinner && <ListPokemon pokemons={pokemons} onStatsClick={getPokemonStatsData}/>}
             </div>
-            <div className="prev-and-next-buttons">
+            <div className="prev-and-next-buttons-bottom">
                 <Button variant="success" onClick={() => getPokemonListData(previousUrl)}>Previous</Button>
                 <Button variant="success"  onClick={()=> scrollUp()}>Top</Button>
                 <Button variant="success" onClick={() => getPokemonListData(nextUrl)}>Next</Button>
